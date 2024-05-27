@@ -1,0 +1,4 @@
+login_user: root
+login_host: db.vehiclads.com
+login_password: Admin@123
+DB_HOST: db.vehiclads.com
