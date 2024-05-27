@@ -1,5 +1,7 @@
 - name: configure DB server
   hosts: db
   become: yes
+  vars:
+    login_host: db.vehiclads.com
   roles:
   - db
