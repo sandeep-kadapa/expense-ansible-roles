@@ -1,1 +1,2 @@
 mysql_root_password: Admin@123
+login_host: db.vehiclads.com
