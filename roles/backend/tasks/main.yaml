@@ -6,10 +6,10 @@
 
 - name: install nodejs & mysql
   ansible.builtin.dnf:
-    name: "{{item}}"
+    name:
+      - nodejs
+      - mysql
     state: latest
-    - nodejs
-    - mysql
 
 - name: create expense user
   ansible.builtin.user: 
