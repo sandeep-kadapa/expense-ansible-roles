@@ -62,6 +62,11 @@
   ansible.builtin.systemd_service:
     daemon_reload: true
 
+- name: Unmask the backend service unit file
+  ansible.builtin.systemd:
+    name: backend.service
+    state: unmasked
+    
 - name: start and enable backend service
   ansible.builtin.service:
     name: backend
